@@ -14,3 +14,11 @@ It uses a very simple method of asking ChatGPT for keywords related to the quest
 $ export OPENAI_API_KEY=YOUR_API_KEY
 $ php -S localhost:8080
 ```
+
+## Dependencies
+
+It uses `pdftotext` to convert PDF files into text files. You need to install `poppler-utils`:
+
+```console
+$ sudo apt install poppler-utils
+```
