@@ -9,7 +9,7 @@ $chat = json_decode(
 
 if( isset( $_FILES['file']['name'] ) ) {
     $uploads_dir = __DIR__ . "/uploads";
-    if( file_exists( $uploads_dir ) ) {
+    if( ! file_exists( $uploads_dir ) ) {
         mkdir( $uploads_dir );
     }
 
